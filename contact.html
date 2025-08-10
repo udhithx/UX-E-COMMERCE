@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX</title>
+
+    <link rel="stylesheet" href="/style.css">
+     <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--Navbar-->
+
+    <nav class="navbar">
+        <h1>UX</h1>
+
+        <div class="navbar-links">
+             <p class="navbar-link"><a href="/index.html">Home</a></p>
+             <p class="navbar-link"><a href="/collection.html">Collections</a></p>
+            <p class="navbar-link"><a href="/contact.html">Contact</a></p>
+        </div>
+        
+        <div class="navbar-menu-toggle" onclick="showNavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!--contact-->
+    <div class main-con>
+    <div class="content-container">
+        <h2>Contact Us</h2>
+        <from>
+            <div class="from-group">
+               <lable for="name">Name</lable>
+               <input type="text" name="name" placeholder="Your full name" required>
+            </div>
+            <div class="from-group">
+               <lable for="email">Email</lable>
+               <input type="email" name="email" placeholder="you@example.com" required>
+            </div>
+            <div class="from-group">
+               <lable for="massage">Massage</lable>
+               <textarea name="massage" placeholder="How can we help you ?" required></textarea>
+            </div>
+            <button type="submit" id="b1">Send Massage</button>
+        </from>
+    </div>
+    </div>
+
+    <!--Side Navbar-->
+
+    <div class="side-navbar" onclick="closeNavbar()">
+        <p style="text-align: right;">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+
+          <div class="side-navbar-links">
+             <p class="side-navbar-link"><a href="/index.html">Home</a></p>
+             <p class="side-navbar-link"><a href="/collection.html">Collections</a></p>
+            <p class="side-navbar-link"><a href="/contact.html">Contact</a></p>
+        </div>
+
+    </div>
+  
+
+    <!--Footer-->
+<footer>
+  <div class="footer-content">
+    <h3>UX</h3>
+    <p>Trendy fashion wear for every occasion</p>
+    
+    <!-- Social Media Icons -->
+    <div class="socials">
+      <a href="https://www.instagram.com/udhith_x/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/udhithx" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/udhithx/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://discord.com/users/udhith_x/" target="_blank"><i class="fab fa-discord"></i></a>
+    </div>
+
+    <p>📧 Email: ux@gmail.com</p>
+
+    <!-- Designed by -->
+    <p class="designed-by">Designed by <span>UdhithX</span></p>
+
+    <!--translator-->
+
+    <div id="transulator"></div>
+    <script src="https:translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        function googleTranslateElementInit(){
+            new google.translate.TranslateElement({pageLanguage:'en'},'transulator');
+        }
+
+    </script>
+  </div>
+</footer>
+
+
+</body>
+<script src="/index.js"></script>
+</html>
